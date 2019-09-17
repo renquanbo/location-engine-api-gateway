@@ -1,0 +1,27 @@
+zuul:
+  sensitiveHeaders:
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----
+                   MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy0vTGiQ5Cnlg/ju/J/An
+                   QfqQ8EM3xwzSkIqKVZLshZNw4iG3Uypaio/nKW1htbk88jeNIoI4RjsG6lmDfeTY
+                   +Aghsaa9UaJGkYBid/5xN6VYQCP6xVzMIJ05ma5f+jTc9un6UP7yF3F5PNvfr3XW
+                   /VafzJoqcJrTvZkDJ98Qv4ELoo3PM2qoZC9Vsj9t8oE4TRow0emR/k4LEV8Jvz+B
+                   m0dkClYVoEMU/rgYB9Rt54zRjKkYs/kgGVxAV9YK+SKvT/9jTHJOGOVWtS5Qibym
+                   nUDU7BCQ23KTfg28eB9juYOGwACt/icxrovCvmIv6axYoV7P/zGOxE5vGFzmODxM
+                   OwIDAQAB
+                   -----END PUBLIC KEY-----
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 8000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
+
